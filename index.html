@@ -26,7 +26,7 @@
             <!-- blane part -->
             <div class="row">
                 <div class="col-md-6">
-                    <img class="img-fluid rounded-3" src="./assets/images/1280-9.jpg" alt="">
+                    <img class="img-fluid rounded-3 h-100 image" src="./assets/images/1280-9.jpg" alt="image">
                 </div>
                 <div class="col-md-6 text-center bg-section-info py-4">
                     <!-- income part -->
@@ -37,7 +37,7 @@
                             <h4>Monthly Income :</h4>
                         </div>
                         <div class="col-md-6">
-                            <input class="form-control" type="number" name="" id="">
+                            <input id="income-id" class="form-control" type="number" name="" id="">
                         </div>
                     </div>
                     <!-- expenses part -->
@@ -48,7 +48,7 @@
                             <h4>Food :</h4>
                         </div>
                         <div class="col-md-6">
-                            <input class="form-control" type="number" name="" id="">
+                            <input id="food-cost" class="form-control" type="number" name="" id="">
                         </div>
                     </div>
                     <div class="row px-5 d-flex align-items-center">
@@ -56,7 +56,7 @@
                             <h4>Rent :</h4>
                         </div>
                         <div class="col-md-6">
-                            <input class="form-control" type="number" name="" id="">
+                            <input id="rent-cost" class="form-control" type="number" name="" id="">
                         </div>
                     </div>
                     <div class="row px-5 d-flex align-items-center">
@@ -64,9 +64,26 @@
                             <h4>Clothes :</h4>
                         </div>
                         <div class="col-md-6">
-                            <input class="form-control my-1" type="number" name="" id="">
+                            <input id="cloth-cost" class="form-control my-1" type="number" name="" id="">
                         </div>
                     </div>
+                    <button id="calculate-button" class="btn btn-success btn-outline-info px-4 my-4">Calculate</button>
+                    <h3>Total Expenses : <span id="expenced-blance">000</span> </h3>
+                    <h3>Balance : <span id="total-blance">000</span> </h3>
+                    <div class="row pt-4 px-4">
+                        <div class="col-md-2">
+                            <h4>save :</h4>
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <input id="save-input" class="form-control" type="number" name="" id="">
+                            <span class="px-3 fs-3">%</span>
+                        </div>
+                        <div class="col-md-4">
+                            <button id="save-button" class="btn btn-success btn-outline-info px-4">Save</button>
+                        </div>
+                    </div>
+                    <h3 class="mt-4">Saving Amount : <span id="saving-blance">000</span> </h3>
+                    <h3>Remaining Balance : <span id="remaining-blance">000</span> </h3>
                 </div>
             </div>
         </section>
