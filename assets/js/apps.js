@@ -28,7 +28,7 @@ document.getElementById('save-button').addEventListener('click',function(){
         const cheekBlance = Number(totalIncome.value) * saveParcent;
         const remainigBlance = setIdField('remaining-blance');
         const Blance = setIdField('total-blance')
-        if(cheekBlance < Number(Blance.innerText)){
+        if(cheekBlance <= Number(Blance.innerText)){
             remainigBlance.innerText = Number(Blance.innerText) - Number(cheekBlance);
             saveBlance.innerText = cheekBlance;
         }else{
