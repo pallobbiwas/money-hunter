@@ -1,3 +1,4 @@
+/* expenses part */
 document.getElementById('calculate-button').addEventListener('click',function(){
     const footCost = setIdField('food-cost');
     const rentCost = setIdField('rent-cost');
@@ -38,7 +39,19 @@ document.getElementById('save-button').addEventListener('click',function(){
         alert('Please enter a possative number');
     }
 });
-
+/* clear */
+document.getElementById('clear').addEventListener('click',function(){
+    const footCost = setIdField('food-cost');
+    const rentCost = setIdField('rent-cost');
+    const clothCost = setIdField('cloth-cost');
+    const totalIncome = setIdField('income-id');
+    const saveInput = setIdField('save-input');
+    footCost.value = '';
+    rentCost.value = '';
+    clothCost.value = '';
+    totalIncome.value = '';
+    saveInput.value = '';
+})
 //function
 function setIdField(id) {
     const inputValue = document.getElementById(id);
